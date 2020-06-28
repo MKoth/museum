@@ -1,0 +1,113 @@
+.main{
+    width: 100%;
+  }
+  .featured__header, .purchases__header{
+    font-weight: bold;
+    margin-left: 30%;
+    margin-bottom: 0;
+  }
+  .featured, .purchases{
+    margin-top: 70px;
+  }
+  .featured__holder, .purchases__holder{
+    border-top: 2px solid  rgba(184, 186, 189, 0.4);
+    width: 100%;
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding: 30px 45px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+  }
+  .featured__img, .purchases__img{
+    width: 100%;
+  }
+  .featured__img-container, .purchases__img-container{
+    width: 33%;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .featured__img-container:hover .overlay__window{
+    bottom: 0;
+  }
+  .overlay__window{
+    background-color: rgba(255, 218, 159, 1);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 0 15px 25px;
+    position: absolute;
+    bottom: -200px;
+    transition: ease 1s;
+  }
+  .overlay__window__img-paragraph{
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+  }
+  .overlay__window__quote{
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    border-top: 1px solid rgba(82, 88, 98, 1);
+  }
+  .overlay__window__quote-link{
+    color: rgba(82, 88, 98, 1);
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .overlay__window__quote-link_span{
+    margin-right: 15px;
+  }
+  .featured__link{
+    display: block;
+    text-decoration: none;
+    color: rgba(82, 88, 98, 1);
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-left: 80%;
+    margin-top: 50px;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 815px){
+    .featured, .purchases{
+      margin-top: 0px;
+    }
+    .featured__holder, .purchases__holder{
+      margin-top: 4px;
+      box-sizing: border-box;
+      padding: 6px 0px;
+    }
+    .featured__img-container, .purchases__img-container{
+      margin-right: 4px;
+    }
+    .featured__header, .purchases__header{
+      margin-left: 6%;
+      font-size: 12px;
+    }
+    .featured__link{
+      font-size: 8px;
+      margin-top: 5px;
+    }
+    .overlay__window{
+      padding: 8px 0 8px 8px;
+      font-size: 10px;
+    }
+    .overlay__window__quote-link{
+      font-size: 10px;
+    }
+    .overlay__window__img-paragraph{
+      font-size: 8px;
+    }
+    .overlay__window__quote{
+      margin-top: 5px;
+      padding-top: 5px;
+    }
+    
+  }
